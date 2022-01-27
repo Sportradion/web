@@ -2,7 +2,7 @@
   "name": "sportradion",
   "version": "0.1.0",
   "private": true,
-  "website":"https://carlleanderson.github.io",
+  "website": "https://carlleanderson.github.io",
   "dependencies": {
     "@react95/core": "^2.10.0",
     "@react95/icons": "^2.0.4",
@@ -20,6 +20,8 @@
     "webamp": "^1.4.1-beta01"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "react-scripts start",
     "start": "serve -s build",
     "build": "react-scripts build",
