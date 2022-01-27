@@ -1,0 +1,24 @@
+.addAnimation {
+  animation-name: example;
+  animation-duration: 10s;
+  animation-iteration-count: 1;
+  animation-delay: 2s;
+}
+
+@keyframes example {
+  from {
+    background-color: green;
+    opacity: 0%;
+  }
+  to {
+    background-color: purple;
+    opacity: 100%;
+  }
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}

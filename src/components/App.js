@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import { GlobalStyle, ThemeProvider } from "@react95/core";
 import { createGlobalStyle } from "styled-components";
 import DataService from "../services/dataService";
 import DataContext from "../contexts/dataContext";
 import Taskbar from "./Taskbar";
 import Desktop from "./Desktop";
+import { TaskBar, List } from "@react95/core";
+import "./App.css";
+import Confett from "./Confett";
 
 const dataService = new DataService();
 
@@ -21,6 +24,7 @@ function App() {
   if (day !== 6 && day !== 0 && hour > 8 && hour < 17) {
     return (
       <DataContext.Provider value={dataService}>
+        <Confett />
         <ThemeProvider>
           <GlobalStyle />
           <BodyFontSizeOverride />
@@ -29,8 +33,18 @@ function App() {
           <Taskbar />
         </ThemeProvider>
       </DataContext.Provider>
-    );
-  } else
+    ); //;
+  } /*
+  <DataContext.Provider value={dataService}>
+      <ThemeProvider>
+        <GlobalStyle />
+        <BodyFontSizeOverride />
+
+        <Desktop />
+        <Taskbar />
+      </ThemeProvider>
+    </DataContext.Provider>
+*/ else
     return (
       <div class="container">
         <div class="middle">
@@ -42,5 +56,4 @@ function App() {
       </div>
     );
 }
-
 export default App;
