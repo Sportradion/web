@@ -2,6 +2,7 @@
   "name": "sportradion",
   "version": "0.1.0",
   "private": true,
+  "website":"https://carlleanderson.github.io",
   "dependencies": {
     "@react95/core": "^2.10.0",
     "@react95/icons": "^2.0.4",
