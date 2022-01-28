@@ -7,9 +7,9 @@ const startWebamp = () => {
         {
           metaData: {
             artist: "Sportradion",
-            title: "300",
+            title: "Dokumentär",
           },
-          url: `${process.env.PUBLIC_URL}/300.mp3`,
+          url: `${process.env.PUBLIC_URL}/sportdok.mp3`,
           duration: 213,
         },
       ],

@@ -2,7 +2,7 @@
   "name": "sportradion",
   "version": "0.1.0",
   "private": true,
-  "homepage":"https://sportradion.github.io",
+  "homepage": "https://sportradion.github.io",
   "dependencies": {
     "@react95/core": "^2.10.0",
     "@react95/icons": "^2.0.4",
